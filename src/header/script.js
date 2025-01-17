@@ -3,18 +3,18 @@ function getSnowflakeCount() {
 
   // Definování množství vloček podle měsíce
   const snowfallMap = [
-    200, // Leden
-    300, // Únor (nejvíce chumelí)
-    250, // Březen
-    100, // Duben
+    20, // Leden
+    30, // Únor (nejvíce chumelí)
+    25, // Březen
+    10, // Duben
     0, // Květen (žádný sníh)
     0, // Červen
     0, // Červenec
     0, // Srpen
     0, // Září
-    50, // Říjen (začátek sněhu)
-    150, // Listopad
-    250, // Prosinec
+    5, // Říjen (začátek sněhu)
+    15, // Listopad
+    25, // Prosinec
   ];
 
   return snowfallMap[month]; // Vrátí počet vloček podle aktuálního měsíce
@@ -41,4 +41,4 @@ function createSnowflakes(count) {
 }
 
 const snowflakeCount = getSnowflakeCount();
-createSnowflakes(snowflakeCount);
+createSnowflakes(0);

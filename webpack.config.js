@@ -62,13 +62,13 @@ export default env => {
     plugins: [new MiniCssExtractPlugin(), new RemoveEmptyScriptsPlugin()],
     ...(isProduction && {
       optimization: {
-        // minimize: true,
-        // minimizer: [
-        //   new WebpackObfuscatorPlugin({
-        //     rotateStringArray: true,
-        //   }),
-        //   new CssMinimizerPlugin(),
-        // ],
+        minimize: true,
+        minimizer: [
+          new WebpackObfuscatorPlugin({
+            rotateStringArray: true,
+          }),
+          new CssMinimizerPlugin(),
+        ],
       },
     }),
     module: {
