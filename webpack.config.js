@@ -19,7 +19,7 @@ const extensionsFilenames = {
 
 const getEntries = (extension, isProduction) => {
   const entries = {};
-  const folders = ['footer', 'header', 'index'];
+  const folders = ['footer', 'header', 'orderFinale'];
   folders.forEach(folder => {
     const files = glob.sync(`./src/${folder}/**/*.${extension}`);
     if (files.length > 0) {
