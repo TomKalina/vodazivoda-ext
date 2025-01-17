@@ -4,7 +4,7 @@
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --env production=true",
     "dev": "shp-bender --remote https://www.vodazivota.cz"
   },
   "devDependencies": {
