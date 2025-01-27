@@ -41,4 +41,4 @@ function createSnowflakes(count) {
 }
 
 const snowflakeCount = getSnowflakeCount();
-createSnowflakes(0);
+createSnowflakes(snowflakeCount);
