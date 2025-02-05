@@ -21,7 +21,7 @@
     "path": "^0.12.7",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
-    "shp-bender": "git+https://github.com/shoptet/shoptet-bender.git",
+    "shp-bender": "file:../shoptet-bender/",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",

@@ -5714,9 +5714,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shp-bender@git+https://github.com/shoptet/shoptet-bender.git":
+"shp-bender@file:../shoptet-bender/::locator=vodazivoda-ext%40workspace%3A.":
   version: 0.0.4
-  resolution: "shp-bender@https://github.com/shoptet/shoptet-bender.git#commit=15b048d45367ea89757f5504ce89edde53034049"
+  resolution: "shp-bender@file:../shoptet-bender/#../shoptet-bender/::hash=be0966&locator=vodazivoda-ext%40workspace%3A."
   dependencies:
     "@babel/core": ^7.24.1
     "@babel/preset-env": ^7.24.1
@@ -5741,7 +5741,7 @@ __metadata:
     webpack-remove-empty-scripts: ^1.0.4
   bin:
     shp-bender: index.js
-  checksum: 67c2376defd8c07df176384ea0e880981ca9b1dcbf8c7a499beeb95889d98be2d6081fa15968cf6d38676c80b3fda15f76349f96f850260994b4fa1be74e3f74
+  checksum: 517e6bbdfbca36ac281539166dba98ebf484ae21ce69edc39dc4e7e86102e22fb555d8528aa38a0ed6e73c71b460e6c2ea17aa7ff03d465c14be5ac98a268e3c
   languageName: node
   linkType: hard
 
@@ -6300,7 +6300,7 @@ __metadata:
     path: ^0.12.7
     sass: ^1.70.0
     sass-loader: ^14.1.0
-    shp-bender: "git+https://github.com/shoptet/shoptet-bender.git"
+    shp-bender: "file:../shoptet-bender/"
     style-loader: ^3.3.4
     webpack: ^5.90.1
     webpack-cli: ^5.1.4
