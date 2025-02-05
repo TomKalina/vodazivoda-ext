@@ -5,12 +5,11 @@ function magicGetByTestId(selector){
     return element.textContent.trim();
 }
 
-const paymentMethod = magicGetByTestId('recapPaymentMethod')
-const orderId= magicGetByTestId('orderNumber')
-const czkAmount = magicGetByTestId('orderTotalPrice').replace('Kč', '').replace(' ', '');
 const recapitulation = document.querySelector('.recapitulation-wrapper');
 
-if(paymentMethod === 'On-chain Bitcoin' && recapitulation) {
+if(recapitulation && magicGetByTestId('recapPaymentMethod') === 'On-chain Bitcoin') {
+    const orderId= magicGetByTestId('orderNumber')
+    const czkAmount = magicGetByTestId('orderTotalPrice').replace('Kč', '').replace(' ', '');
 
     fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=czk')
     .then(response => response.json())
