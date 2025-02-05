@@ -25,7 +25,7 @@ if(recapitulation && magicGetByTestId('recapPaymentMethod') === 'On-chain Bitcoi
             QR kód pro ON-CHAIN Platbu
           </div>
           <div>
-          <img src="https://api.qrserver.com/v1/create-qr-code/?data=bitcoin:${btcAdres}?amount=${btcAmount}?label="${label}"?message="${message}"&size=300x300" alt="QR kód pro platbu" />
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=bitcoin:${btcAdres}?amount=${btcAmount}?label='${label}'?message='${message}'&size=300x300" alt="QR kód pro platbu" />
           </div>
         </div>
       `);
