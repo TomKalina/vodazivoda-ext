@@ -1,3 +1,4 @@
+
 function getSnowflakeCount() {
   const month = new Date().getMonth(); // Získání aktuálního měsíce (0 = leden, 1 = únor, ..., 11 = prosinec)
 
@@ -20,7 +21,13 @@ function getSnowflakeCount() {
   return snowfallMap[month]; // Vrátí počet vloček podle aktuálního měsíce
 }
 
-function createSnowflakes(count) {
+/**
+ *
+ * @param {number} initCount
+ */
+export function createSnowflakes(initCount) {
+  const count = initCount || getSnowflakeCount();
+
   const container = document.querySelector(".snowflakes");
 
   for (let i = 0; i < count; i++) {
@@ -39,6 +46,3 @@ function createSnowflakes(count) {
     container.appendChild(snowflake);
   }
 }
-
-const snowflakeCount = getSnowflakeCount();
-createSnowflakes(snowflakeCount);

@@ -59,16 +59,16 @@ export default env => {
       path: outputDir,
       clean: true,
     },
-    plugins: [new MiniCssExtractPlugin(), new RemoveEmptyScriptsPlugin()],
+    plugins: [new MiniCssExtractPlugin()],
     ...(isProduction && {
       optimization: {
-        minimize: true,
-        minimizer: [
-          new WebpackObfuscatorPlugin({
-            rotateStringArray: true,
-          }),
-          new CssMinimizerPlugin(),
-        ],
+        // minimize: true,
+        // minimizer: [
+        //   new WebpackObfuscatorPlugin({
+        //     rotateStringArray: true,
+        //   }),
+        //   new CssMinimizerPlugin(),
+        // ],
       },
     }),
     module: {

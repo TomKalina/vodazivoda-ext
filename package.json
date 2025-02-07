@@ -10,6 +10,7 @@
   "devDependencies": {
     "@babel/core": "^7.24.1",
     "@babel/preset-env": "^7.24.1",
+    "@shoptet/datalayer": "^0.1.1-alpha.1",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.10.0",
     "css-minimizer-webpack-plugin": "^6.0.0",
@@ -31,5 +32,8 @@
   "name": "vodazivoda-ext",
   "description": "něco to rošiřuje",
   "_id": "vodazivoda-ext@1.0.0",
-  "packageManager": "yarn@3.8.1+sha512.8cfec856814c797ccb480703ca5270824327fac5abce240835e2699e01732229fd22bbeb1bb87047a0069f7698be9b2e3d9a926e6046e851faa9908fdacdeacf"
+  "packageManager": "yarn@3.8.1+sha512.8cfec856814c797ccb480703ca5270824327fac5abce240835e2699e01732229fd22bbeb1bb87047a0069f7698be9b2e3d9a926e6046e851faa9908fdacdeacf",
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
 }
