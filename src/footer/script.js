@@ -8,6 +8,7 @@ const shoptetDataLayer = getShoptetDataLayer();
 import { initBtcOnChain } from './btcOnChain.js';
 import { createSnowflakes } from './snowflakes.js';
 
-
-initBtcOnChain(`bc1qsp9j6af90pxlkj5tvmqgsva3nqngm624ygfezm`);
-createSnowflakes();
+function initAll(){
+    initBtcOnChain(btcAdres);
+    createSnowflakes();
+}
