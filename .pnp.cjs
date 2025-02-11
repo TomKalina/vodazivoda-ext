@@ -30,7 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/core", "npm:7.26.7"],\
             ["@babel/preset-env", "virtual:baafabe52897b9efcc70454ae35fe26ea6892da2f290f8fa53f5b07346915558f15dab657140dc4853996bbe1f01baf4412d030b63b1e98e455af6758dd35e64#npm:7.26.7"],\
-            ["@shoptet/datalayer", "npm:0.1.1-alpha.1"],\
+            ["@shoptet/datalayer", "npm:0.1.2-alpha.1"],\
             ["babel-loader", "virtual:3e7b7383085e44efeb740c7ea22590f032ba320c7f1c94360a8c17178768bbeb81cd9595e561cb67d1c1d2a859a967d6511badc18feaa671c8aaccdbf58a9838#npm:9.2.1"],\
             ["css-loader", "virtual:3e7b7383085e44efeb740c7ea22590f032ba320c7f1c94360a8c17178768bbeb81cd9595e561cb67d1c1d2a859a967d6511badc18feaa671c8aaccdbf58a9838#npm:6.11.0"],\
             ["css-minimizer-webpack-plugin", "virtual:3e7b7383085e44efeb740c7ea22590f032ba320c7f1c94360a8c17178768bbeb81cd9595e561cb67d1c1d2a859a967d6511badc18feaa671c8aaccdbf58a9838#npm:6.0.0"],\
@@ -2308,10 +2308,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@shoptet/datalayer", [\
-        ["npm:0.1.1-alpha.1", {\
-          "packageLocation": "./.yarn/cache/@shoptet-datalayer-npm-0.1.1-alpha.1-71666874c2-9943cc4080.zip/node_modules/@shoptet/datalayer/",\
+        ["npm:0.1.2-alpha.1", {\
+          "packageLocation": "./.yarn/cache/@shoptet-datalayer-npm-0.1.2-alpha.1-e2a80c7e8f-076af8654a.zip/node_modules/@shoptet/datalayer/",\
           "packageDependencies": [\
-            ["@shoptet/datalayer", "npm:0.1.1-alpha.1"]\
+            ["@shoptet/datalayer", "npm:0.1.2-alpha.1"],\
+            ["zod", "npm:3.24.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8610,7 +8611,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vodazivoda-ext", "workspace:."],\
             ["@babel/core", "npm:7.26.7"],\
             ["@babel/preset-env", "virtual:baafabe52897b9efcc70454ae35fe26ea6892da2f290f8fa53f5b07346915558f15dab657140dc4853996bbe1f01baf4412d030b63b1e98e455af6758dd35e64#npm:7.26.7"],\
-            ["@shoptet/datalayer", "npm:0.1.1-alpha.1"],\
+            ["@shoptet/datalayer", "npm:0.1.2-alpha.1"],\
             ["babel-loader", "virtual:3e7b7383085e44efeb740c7ea22590f032ba320c7f1c94360a8c17178768bbeb81cd9595e561cb67d1c1d2a859a967d6511badc18feaa671c8aaccdbf58a9838#npm:9.2.1"],\
             ["css-loader", "virtual:3e7b7383085e44efeb740c7ea22590f032ba320c7f1c94360a8c17178768bbeb81cd9595e561cb67d1c1d2a859a967d6511badc18feaa671c8aaccdbf58a9838#npm:6.11.0"],\
             ["css-minimizer-webpack-plugin", "virtual:3e7b7383085e44efeb740c7ea22590f032ba320c7f1c94360a8c17178768bbeb81cd9595e561cb67d1c1d2a859a967d6511badc18feaa671c8aaccdbf58a9838#npm:6.0.0"],\
