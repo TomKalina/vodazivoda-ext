@@ -1,10 +1,4 @@
 // ts-check
-/**
- * @typedef {import('@shoptet/datalayer').DataLayer} DataLayer
- */
-
-/** @type {DataLayer} */
-const shoptetDataLayer = getShoptetDataLayer();
 
 export function initBtcOnChain(btcAdres) {
   function magicGetByTestId(selector) {
@@ -13,14 +7,14 @@ export function initBtcOnChain(btcAdres) {
   }
 
   if (
-    shoptetDataLayer.pageType === "thankYou" &&
+    getShoptetDataLayer().pageType === "thankYou" &&
     magicGetByTestId("recapPaymentMethod") === "On-chain Bitcoin"
   ) {
     const recapitulation = document.querySelector(".recapitulation-wrapper");
 
-    const orderNo = shoptetDataLayer.order.orderNo;
-    const total = shoptetDataLayer.order.total;
-    const currencyCode = shoptetDataLayer.order.currencyCode;
+    const orderNo = getShoptetDataLayer().order.orderNo;
+    const total = getShoptetDataLayer().order.total;
+    const currencyCode = getShoptetDataLayer().order.currencyCode;
 
     fetch(
       `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${currencyCode}`
