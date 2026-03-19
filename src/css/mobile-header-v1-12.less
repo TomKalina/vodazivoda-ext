@@ -1,0 +1,95 @@
+@media (max-width: 991px) {
+  :where(body.ums_a11y_login--off) .navigation-buttons .dropdown,
+  :where(body.ums_a11y_login--off) .navigation-buttons .languagesMenu {
+    display: none;
+  }
+  :where(body.ums_a11y_login--off) .navigation-buttons a[data-target="login"] {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  :where(body.ums_a11y_login--on) .navigation-buttons .dropdown,
+  :where(body.ums_a11y_login--on) .navigation-buttons .languagesMenu {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .navigation-in {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .navigation-in > ul > li > a {
+    align-items: center;
+    display: flex;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .navigation-in > ul > li > a > b {
+    display: inline-block;
+    font-weight: 700;
+  }
+  .navigation-in > ul > li > a > b,
+  .navigation-in > ul > li > a > span {
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+  }
+  .navigation-in > ul > li > a .navigationActions__flagWrapper {
+    line-height: 24px;
+    padding-bottom: calc(-4px + 1.25rem);
+    padding-top: calc(-4px + 1.25rem);
+  }
+  .navigation-in ul.menu-level-2 li a.navigationActions__link--flag {
+    padding-bottom: calc(-4px + 0.9375rem);
+    padding-top: calc(-4px + 0.9375rem);
+  }
+  .submenu-arrow {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .submenu-arrow:after {
+    vertical-align: sub;
+  }
+}
+@media (max-width: 479px) {
+  .navigation-close:before {
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .overall-wrapper {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 479px) {
+  .overall-wrapper {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 991px) {
+  #header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: transform 0.15s;
+    width: 100%;
+    z-index: 56;
+  }
+  .scrolled-down #header {
+    transform: translateY(-100%);
+  }
+}
+.top-nav-button-login,
+a.top-nav-button-account {
+  display: none;
+}
+@media (min-width: 992px) {
+  .top-nav-button-login,
+  a.top-nav-button-account {
+    display: block;
+  }
+}
