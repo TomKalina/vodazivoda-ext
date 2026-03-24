@@ -3,8 +3,6 @@
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
 (() => {
 
-// UNUSED EXPORTS: btcAdres, createSnowflakes, initAll, initBtcOnChain
-
 ;// ./src/js/btcOnChain.js
 // ts-check
 
@@ -139,9 +137,6 @@ function initAll(){
 window.initBtcOnChain = initBtcOnChain;
 window.createSnowflakes = createSnowflakes;
 window.initAll = initAll;
-
-
-// Export for webpack library
 
 })();
 
